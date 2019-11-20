@@ -12,6 +12,7 @@ import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -103,6 +104,30 @@ public class PrincipalActivity extends AppCompatActivity implements TextToSpeech
                 }
             }
         }
+       /* if(sintilde.equals("WhatsApp")){
+            Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.whatsapp");
+            startActivity(launchIntent);
+        }else{
+            Toast.makeText(this, "No abriré WP, recibí "+sintilde, Toast.LENGTH_LONG).show();
+        }*/
+
+        if(sintilde.equals("WhatsApp")){
+            Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.whatsapp");
+            startActivity(launchIntent);
+        }else if(sintilde.equals("Facebook")){
+            Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.facebook.katana");
+            startActivity(launchIntent);
+        }
+
+
+        /*if(sintilde.equals("Facebook")){
+            Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.facebook.katana");
+            startActivity(launchIntent);
+        }else{
+            Toast.makeText(this, "No abriré FB, recibí "+sintilde, Toast.LENGTH_LONG).show();
+        }*/
+
+
         responder(respuesta);
     }
 
@@ -223,6 +248,12 @@ public class PrincipalActivity extends AppCompatActivity implements TextToSpeech
         respuestas.add(new Respuestas("haciendo", "Hablando contigo"));
 
 
+        //Aplicaciones
+        respuestas.add(new Respuestas("whatsapp", "Espera un momento"));
+        respuestas.add(new Respuestas("facebook", "Espera un momento"));
+
+
+
 
 
         //Operaciones aritméticas.
@@ -230,6 +261,9 @@ public class PrincipalActivity extends AppCompatActivity implements TextToSpeech
         respuestas.add(new Respuestas("menos ", "La respuesta de la resta es "));
         respuestas.add(new Respuestas("por ", "La respuesta de la multiplicación es "));
         respuestas.add(new Respuestas("dividido ", "La respuesta de la división es "));
+
+
+
 
 
 
