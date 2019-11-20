@@ -212,11 +212,15 @@ public class PrincipalActivity extends AppCompatActivity implements TextToSpeech
         respuestas.add(new Respuestas("vives", "¿En serio no sabes? Yo vivo aquí en tu celular"));
         respuestas.add(new Respuestas("pasatiempo", "Me gusta programar"));
         respuestas.add(new Respuestas("color", "Me gusta el color Azul"));
-        respuestas.add(new Respuestas("creo", "Fui creada por: Bryan y Andrés como un proyecto final"));
+        respuestas.add(new Respuestas("creador", "Fui creada por: Bryan y Andrés como un proyecto final"));
         respuestas.add(new Respuestas("novia", "Me gustas… pero solo como amigo"));
         respuestas.add(new Respuestas("pesas", "Soy ingrávida, como una nube. Espera un minuto, las nubes realmente pesan mucho, ¡así que esa respuesta no me conviene!"));
         respuestas.add(new Respuestas("padre", "Nooooooooooo. Eso no es cierto. ¡Eso es imposible!"));
         respuestas.add(new Respuestas("casada", "Estoy felizmente soltera"));
+        respuestas.add(new Respuestas("hacer", "Por el momento muy poco, estoy en el proceso de aprendizaje"));
+        respuestas.add(new Respuestas("viva", "Obvio microbio"));
+        respuestas.add(new Respuestas("ver", "¿No me estas viendo?, yo si te veo"));
+        respuestas.add(new Respuestas("haciendo", "Hablando contigo"));
 
 
 
